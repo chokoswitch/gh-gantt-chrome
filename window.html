@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>GitHub Gantt Chart</title>
+<link rel="stylesheet" href="bower_components/jquery.gantt/css/style.css">
+<link rel="stylesheet" href="style.css">
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/jquery.gantt/js/jquery.fn.gantt.js"></script>
+<script src="utils.js"></script>
+<script src="config.js"></script>
+<script src="github.js"></script>
+<script src="planning.js"></script>
+<script src="window.js"></script>
+</head>
+<body>
+
+<div class="contain">
+  <h1>GitHub issues Gantt</h1>
+  <div id='msg' class="alert alert-block"></div>
+
+  <select id="repo-select"><option>---</option></select>
+
+  <div id="gantt" style="display:none">
+      <div id='refresh-button-container'>
+          <button id="refresh-button" class='btn'>Refresh</button>
+      </div>
+      
+      <h2>By Milestone</h2>
+      <div class="gantt-milestone"></div>
+      
+      <h2>By Dev</h2>
+      <div class="gantt-dev"></div>
+
+      <h2>By Milestone</h2>
+      <div class="gantt-milestone-only"></div>
+  </div>
+</div>
+</body>
+</html>
+

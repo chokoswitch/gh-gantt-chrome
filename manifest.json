@@ -1,0 +1,15 @@
+{
+    "name": "GitHub Gantt Chart",
+    "description": "A Gantt-chart visualization of GitHub issues for repository.",
+    "version": "0.1",
+    "manifest_version": 2,
+    "app": {
+	"background": {
+	    "scripts": ["background.js"]
+	}
+    },
+    "permissions": [
+	"https://api.github.com/*",
+        "storage"
+    ]
+}

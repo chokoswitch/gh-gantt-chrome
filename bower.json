@@ -1,0 +1,33 @@
+{
+  "name": "GitHub Gantt Chart",
+  "version": "0.1",
+  "authors": [
+    "Choko <choko@curioswitch.org>"
+  ],
+  "description": "A Gantt-chart visualization of GitHub issues for a repository.",
+  "main": "manifest.json",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "github",
+    "gantt",
+    "project",
+    "management"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/chokoswitch/gh-gantt-chrome",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "moment": "~2.10.2",
+    "jQuery.Gantt": "git://github.com/taitems/jQuery.Gantt.git#3a0028d3ae433d6d2558786d9a4098142d18a4a8",
+    "bootstrap": "~3.3.4"
+  }
+}
